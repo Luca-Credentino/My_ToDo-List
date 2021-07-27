@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+     <!-- fontAwesome -->
+ <script
+ src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+ data-search-pseudo-elements
+></script>
+    <title>My to-do list</title>
+</head>
+<body>
+    <div class="top-container">
+        <i class="fab fa-github fa-2x"></i>
+        <h2>Creator:</h2>
+        <a style="color: white;" href="https://github.com/Luca-Credentino">@Luca Credentino</a>
+      </div>
+        <div class="container">
+            <div class="">
+                <h1>
+                    My to-do list
+                </h1>
+                <p>
+                    Double-click an item to mark it as <span style="color: green;">complete</span>
+                </p>
+            </div>
+            <input id="userInput" placeholder="New item..." maxlength="32" type="text" >
+            <button id="add">Add</button>
+            <div class="list-container">
+                <ol>
+                </ol>
+            </div>
+            <div class="button-div row col-lg-12">
+                <button id="completed-btn">Completed</button>
+                <button id="remove-btn">Remove</button>
+            </div>
+        </div>
+    <script type="text/javascript" src="script.js">
+    </script>
+</body>
+</html>

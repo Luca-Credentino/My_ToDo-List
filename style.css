@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #334257;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container{
+    position: relative;
+    margin-top: 10%;
+    height: 40vh;
+    width: 50%;
+    background-color: #EEEEEE;
+    border-radius: 9px;
+    height: fit-content;
+    width: fit-content;
+    
+}
+
+h1{
+    font-weight: 900;
+    width: fit-content;
+    text-align: start;
+    font-size: 28px;
+    padding-top: 32px;
+    padding-left: 8px;
+}
+p{
+    text-align: start;
+    padding-left: 8px;
+    font-style: oblique;
+    font-size: 17px;
+}
+input{
+    border-radius: 5px;
+	min-width: 65%;
+    font-size: 14px;
+    border: none;
+    background-color: #ccc;
+}
+button{
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+    color: white;
+    border-radius: 9px;
+    width: 80px;
+    background-color: #548CA8;
+    text-decoration: none;
+    font-size: 13px;
+    height: 28px;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+button:active{
+    transform: translateY(1px);
+}
+
+#completed-btn{
+    background-color: green;
+}
+#remove-btn{
+    background-color: red;
+
+}
+.button-div{
+    margin-left: 1px;
+}
+.list-container{
+    margin-bottom: 32px;
+}
+.list-container ol li{
+    margin: 4px;
+    text-align: start;
+}
+
+.delete {
+    display: none;
+}
+.add{
+    background-color: green;
+    border-radius: 5px;
+    width: fit-content;
+    color: white;
+}
+.top-container{
+    margin-top: 2rem;
+}
+
