@@ -1,9 +1,9 @@
-var input = document.getElementById("userInput");
-var addBtn = document.getElementById("add"); 
-var ol = document.querySelector("ol")
-var removeBtn = document.getElementById("remove-btn");
-var item = document.querySelectorAll("li");
-var CompletedBtn = document.getElementById("completed-btn");
+const input = document.getElementById("userInput");
+const addBtn = document.getElementById("add"); 
+const ol = document.querySelector("ol")
+const removeBtn = document.getElementById("remove-btn");
+const item = document.querySelectorAll("li");
+const CompletedBtn = document.getElementById("completed-btn");
 // input.addEventListener("click", ()=>{
 //     console.log(input.value)
 // })
@@ -17,9 +17,9 @@ addBtn.addEventListener("click", ()=>{
             ol.appendChild(li);
             input.value = "";
             //double-click an item for mark as complete
-            li.addEventListener("click", ()=>{
+            li.addEventListener("dblclick", ()=>{
                 li.classList.add("add");
-                li.addEventListener("dblclick", ()=>{
+                li.addEventListener("click", ()=>{
                     li.classList.remove("add")
                 })
             })

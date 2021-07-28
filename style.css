@@ -74,6 +74,9 @@ button:active{
 .list-container{
     margin-bottom: 32px;
 }
+.list-container li{
+    list-style: none;
+}
 .list-container ol li{
     margin: 4px;
     text-align: start;
