@@ -26,19 +26,22 @@
                 <h1>
                     My ToDo list
                 </h1>
-                <p>
-                    Double-click an item to mark it as <span style="color: green;">complete</span>
-                </p>
             </div>
-            <input id="userInput" placeholder="New item..." maxlength="32" type="text" >
-            <button id="add">Add</button>
+            <div class="middle-container col-12">
+                <input id="userInput" placeholder="New item..." maxlength="32" type="text" >
+                <button id="add">Add</button>
+            </div>
             <div class="list-container">
                 <ol>
                 </ol>
             </div>
-            <div class="button-div row col-lg-12">
-                <button id="completed-btn">Completed</button>
-                <button id="remove-btn">Remove</button>
+            <div class="button-div row">
+                <div class="col-12">
+                    <button  id="completed-btn">Completed all</button>
+                </div>
+                <div class="col-12">
+                    <button  id="remove-btn">Remove all</button>
+                </div>
             </div>
         </div>
     <script type="text/javascript" src="script.js">

@@ -1,4 +1,8 @@
+    /*  Google Fonts    */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    /*  media */
+
 body{
     text-align: center;
     margin-left: auto;
@@ -15,64 +19,72 @@ body{
     height: 40vh;
     width: 50%;
     background-color: #EEEEEE;
-    border-radius: 9px;
-    height: fit-content;
-    width: fit-content;
+    border-radius: 24px;
+    height: max-content;
+    width: max-content;
     
 }
 
 h1{
     font-weight: 900;
     width: fit-content;
-    text-align: start;
+    text-align: center;
     font-size: 28px;
-    padding-top: 32px;
-    padding-left: 8px;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
 }
-p{
-    text-align: start;
-    padding-left: 8px;
-    font-style: oblique;
-    font-size: 17px;
+
+.middle-container{
+    display: flex;
+    justify-content: center;
+}
+.checkbox{
+    margin-left: 1rem;
+}
+.deleteicon{
+    color: red;
+    margin-left: 8px;
 }
 input{
-    border-radius: 5px;
-	min-width: 65%;
+    border-radius: 9px;
     font-size: 14px;
     border: none;
     background-color: #ccc;
 }
+
 button{
     border: none;
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
     color: white;
-    border-radius: 9px;
-    width: 80px;
+    border-radius: 22px;
+    width: 90px;
     background-color: #548CA8;
-    text-decoration: none;
-    font-size: 13px;
-    height: 28px;
-    font-weight: 900;
-    margin-bottom: 16px;
+    font-size: 14px;
+    height: 30px;
+    font-weight: 700;
 }
 button:active{
     transform: translateY(1px);
 }
-
+#completed-btn, #remove-btn{
+    margin-bottom: 16px;
+}
 #completed-btn{
     background-color: green;
+    width: max-content;
 }
 #remove-btn{
     background-color: red;
 
 }
 .button-div{
-    margin-left: 1px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 .list-container{
     margin-bottom: 32px;
+    margin-top: 16px;
 }
 .list-container li{
     list-style: none;
@@ -81,15 +93,13 @@ button:active{
     margin: 4px;
     text-align: start;
 }
+input:focus{ border: none;}
 
 .delete {
     display: none;
 }
-.add{
-    background-color: green;
-    border-radius: 5px;
-    width: fit-content;
-    color: white;
+#add{
+    margin-left: 8px;  
 }
 .top-container{
     margin-top: 2rem;

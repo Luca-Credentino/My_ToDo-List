@@ -9,28 +9,41 @@ const CompletedBtn = document.getElementById("completed-btn");
 // })
 
 addBtn.addEventListener("click", ()=>{
-    var inputValue = input.value;
+    let inputValue = input.value;
     if(inputValue > 0 || inputValue > ""){
+
         function createList(){
-            var li = document.createElement("li");
+            let li = document.createElement("li");
+            
+            let checkBox = document.createElement("input") //checkbox
+            checkBox.type = "checkbox"
+            checkBox.id = "test"
+            checkBox.className = "checkbox"
+
+            /* FavIcon: trashCan  */
+            var deleteIconBox = document.createElement("i")
+            deleteIconBox.className = "fas fa-trash-alt deleteicon"
+
+            //appendchild
             li.appendChild(document.createTextNode(inputValue));
+            li.appendChild(checkBox)
+            li.appendChild(deleteIconBox);
             ol.appendChild(li);
             input.value = "";
-            //double-click an item for mark as complete
-            li.addEventListener("dblclick", ()=>{
-                li.classList.add("add");
-                li.addEventListener("click", ()=>{
-                    li.classList.remove("add")
-                })
-            })
+
+            //removeBtn
             removeBtn.addEventListener("click", ()=>{
                 li.classList.add("delete");
              })
+            //trashCan icon onclick
+            deleteIconBox.addEventListener("click", ()=>{
+                
+            })
              //Completed Btn
              CompletedBtn.addEventListener("click", ()=>{
-                li.classList.add("add");
+                checkBox.checked = "checked"
                 CompletedBtn.addEventListener("dblclick", ()=>{
-                    li.classList.remove("add");
+                    checkBox.checked = ""
                 })
             })
         }
